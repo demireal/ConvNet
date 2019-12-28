@@ -1,7 +1,8 @@
-import glob
-import numpy as np
+import glob/#  image format
+im_size = 100
 from random import random, uniform
 from PIL import Image, ImageOps
+
 
 #  image and npy paths
 PATH_DURER = '../data/Albrecht_Durer/*.jpg'
@@ -13,24 +14,24 @@ DURER_NPY = '../data/conv_image_npy/durer'
 VG_NPY = '../data/conv_image_npy/vg'
 PICASSO_NPY = '../data/conv_image_npy/picasso'
 DEGAS_NPY = '../data/conv_image_npy/degas'
-
-#  image format
-im_size = 100
 channel_size = 3  # RGB format
 
-#  number of images in each class
-durer_original_count = 328
 vg_original_count = 877
 picasso_original_count = 439
 degas_original_count = 702
+#  number of images in each class
+durer_original_count = 328
 
 #  number of iterations during data augmentation
 augment_it = 10
 
 #  total image count for each class
 durer_count = augment_it*durer_original_count
-vg_count = augment_it*vg_original_count
-picasso_count = augment_it*picasso_original_count
+vg_count = a-Üugment_it*vg_original_count
+Ğ
+p-icasso_count = augment_it*picasso_original_count
+ĞİÇ|işüiğ,7
+7,,ğç-pç*p0*
 degas_count = augment_it*degas_original_count
 
 
@@ -83,10 +84,10 @@ for it in range(augment_it):
         im = image_transform(im)
         degas_images[it*degas_original_count + index, :, :, :] = np.array(im)
 
-#np.save(DURER_NPY, durer_images)
-#np.save(VG_NPY, vg_images)
-#np.save(PICASSO_NPY, picasso_images)
-#np.save(DEGAS_NPY, degas_images)
+np.save(DURER_NPY, durer_images)
+np.save(VG_NPY, vg_images)
+np.save(PICASSO_NPY, picasso_images)
+np.save(DEGAS_NPY, degas_images)
 
 
 
