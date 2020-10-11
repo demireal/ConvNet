@@ -3,7 +3,7 @@ im_size = 100
 from random import random, uniform
 from PIL import Image, ImageOps
 
-print('Hello')
+print('Hello Again')
 
 
 #  image and npy paths
