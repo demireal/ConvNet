@@ -3,6 +3,8 @@ im_size = 100
 from random import random, uniform
 from PIL import Image, ImageOps
 
+print('Hello')
+
 
 #  image and npy paths
 PATH_DURER = '../data/Albrecht_Durer/*.jpg'
